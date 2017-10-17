@@ -66,9 +66,7 @@ public class BetterButton: UIButton {
         
         UIView.animate(withDuration: 0.1, animations: {
             self.transform = CGAffineTransform.identity
-        }, completion: { (bool) in
-            
-        })
+        }, completion: nil)
     }
     
     public func shake(_ duration: Double = 0.75) {
@@ -77,7 +75,26 @@ public class BetterButton: UIButton {
         animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
         animation.duration = duration
         animation.values = [-15.0, 15.0, -15.0, 15.0, -10.0, 10.0, -5.0, 5.0, 0.0 ]
-        layer.add(animation, forKey: "shake")
+        layer.add(animation, forKey: "shake") //TODO: check what .add does
+    }
+    
+    public func rippleButton(_ duration: Double = 0.25) {
+        let rippleRectangle = UIView(frame: self.bounds)
+        rippleRectangle.layer.borderColor = UIColor(red:0.22, green:0.79, blue:0.45, alpha:1.00).cgColor
+        rippleRectangle.layer.borderWidth = 2
+        rippleRectangle.layer.backgroundColor = UIColor.clear.cgColor
+        rippleRectangle.layer.cornerRadius = cornerRadius
+        self.addSubview(rippleRectangle)
+        self.sendSubview(toBack: rippleRectangle)
+        
+        
+        
+        UIView.animate(withDuration: 0.25, animations: {
+            rippleRectangle.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
+            rippleRectangle.alpha = 0.0
+        }) { (done) in
+            rippleRectangle.removeFromSuperview()
+        }
     }
     
     /*
