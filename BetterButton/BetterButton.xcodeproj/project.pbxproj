@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		CA32D3E21F9591DA00A0CB22 /* BetterButton.h in Headers */ = {isa = PBXBuildFile; fileRef = CA32D3E01F9591DA00A0CB22 /* BetterButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAC4AFD21F959990009B20C8 /* BetterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4AFD11F959990009B20C8 /* BetterButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA32D3DD1F9591DA00A0CB22 /* BetterButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BetterButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA32D3E01F9591DA00A0CB22 /* BetterButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BetterButton.h; sourceTree = "<group>"; };
 		CA32D3E11F9591DA00A0CB22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAC4AFD11F959990009B20C8 /* BetterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		CA32D3DF1F9591DA00A0CB22 /* BetterButton */ = {
 			isa = PBXGroup;
 			children = (
+				CAC4AFD11F959990009B20C8 /* BetterButton.swift */,
 				CA32D3E01F9591DA00A0CB22 /* BetterButton.h */,
 				CA32D3E11F9591DA00A0CB22 /* Info.plist */,
 			);
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					CA32D3DC1F9591DA00A0CB22 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC4AFD21F959990009B20C8 /* BetterButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +258,7 @@
 		CA32D3E61F9591DA00A0CB22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -266,6 +272,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bd.BetterButton;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +281,7 @@
 		CA32D3E71F9591DA00A0CB22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
