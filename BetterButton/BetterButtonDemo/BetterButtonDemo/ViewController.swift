@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import BetterButton
 
 class ViewController: UIViewController {
 
