@@ -71,11 +71,11 @@ public class BetterButton: UIButton {
         })
     }
     
-    public func shake() {
+    public func shake(_ duration: Double = 0.75) {
         print("Attempting to shake")
         let animation = CAKeyframeAnimation(keyPath: "transform.translation.x")
         animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
-        animation.duration = 0.75
+        animation.duration = duration
         animation.values = [-15.0, 15.0, -15.0, 15.0, -10.0, 10.0, -5.0, 5.0, 0.0 ]
         layer.add(animation, forKey: "shake")
     }

@@ -19,11 +19,21 @@ class MainViewController: UIViewController {
         return btn
     }()
     
+    let shakeButton : BetterButton = {
+        let btn = BetterButton(frame: CGRect(x: 0, y: 0, width: 200.0, height: 40.0))
+        btn.theme = .Red
+        btn.setTitle("Shake", for: .normal)
+        btn.translatesAutoresizingMaskIntoConstraints = false
+        btn.addTarget(self, action: #selector(MainViewController.ShakeMainButton), for: .touchUpInside)
+        return btn
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
         
         self.view.addSubview(mainButton)
+        self.view.addSubview(shakeButton)
         
         ApplyConstraints()
     }
@@ -35,6 +45,11 @@ class MainViewController: UIViewController {
         mainButton.heightAnchor.constraint(equalToConstant: 40.0).isActive = true
         mainButton.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.45).isActive = true
         
+        shakeButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        shakeButton.centerYAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -25).isActive = true
+        shakeButton.heightAnchor.constraint(equalToConstant: 40.0).isActive = true
+        shakeButton.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.90).isActive = true
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -42,6 +57,9 @@ class MainViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction private func ShakeMainButton(sender: UIButton){
+        mainButton.shake(0.40)
+    }
+    
 }
 
