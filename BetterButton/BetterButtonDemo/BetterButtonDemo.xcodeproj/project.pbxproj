@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		CAC4AFA21F9593A9009B20C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4AFA11F9593A9009B20C8 /* AppDelegate.swift */; };
-		CAC4AFA41F9593A9009B20C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4AFA31F9593A9009B20C8 /* ViewController.swift */; };
-		CAC4AFA71F9593A9009B20C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC4AFA51F9593A9009B20C8 /* Main.storyboard */; };
+		CAC4AFA41F9593A9009B20C8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4AFA31F9593A9009B20C8 /* MainViewController.swift */; };
 		CAC4AFA91F9593A9009B20C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAC4AFA81F9593A9009B20C8 /* Assets.xcassets */; };
 		CAC4AFAC1F9593A9009B20C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC4AFAA1F9593A9009B20C8 /* LaunchScreen.storyboard */; };
-		CAC4AFB91F959444009B20C8 /* BetterButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC4AFB81F95943C009B20C8 /* BetterButton.framework */; };
-		CAC4AFBA1F959444009B20C8 /* BetterButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CAC4AFB81F95943C009B20C8 /* BetterButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CAEBC3641F95A0F0003D4B3A /* BetterButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC4AFB81F95943C009B20C8 /* BetterButton.framework */; };
+		CAEBC3651F95A0F0003D4B3A /* BetterButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CAC4AFB81F95943C009B20C8 /* BetterButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +23,7 @@
 			remoteGlobalIDString = CA32D3DD1F9591DA00A0CB22;
 			remoteInfo = BetterButton;
 		};
-		CAC4AFBB1F959444009B20C8 /* PBXContainerItemProxy */ = {
+		CAEBC3661F95A0F0003D4B3A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CAC4AFB31F95943C009B20C8 /* BetterButton.xcodeproj */;
 			proxyType = 1;
@@ -34,13 +33,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CAC4AFBD1F959444009B20C8 /* Embed Frameworks */ = {
+		CAEBC3681F95A0F0003D4B3A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CAC4AFBA1F959444009B20C8 /* BetterButton.framework in Embed Frameworks */,
+				CAEBC3651F95A0F0003D4B3A /* BetterButton.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,8 +49,7 @@
 /* Begin PBXFileReference section */
 		CAC4AF9E1F9593A9009B20C8 /* BetterButtonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterButtonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC4AFA11F9593A9009B20C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CAC4AFA31F9593A9009B20C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CAC4AFA61F9593A9009B20C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CAC4AFA31F9593A9009B20C8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CAC4AFA81F9593A9009B20C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAC4AFAB1F9593A9009B20C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAC4AFAD1F9593A9009B20C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAC4AFB91F959444009B20C8 /* BetterButton.framework in Frameworks */,
+				CAEBC3641F95A0F0003D4B3A /* BetterButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,8 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				CAC4AFA11F9593A9009B20C8 /* AppDelegate.swift */,
-				CAC4AFA31F9593A9009B20C8 /* ViewController.swift */,
-				CAC4AFA51F9593A9009B20C8 /* Main.storyboard */,
+				CAC4AFA31F9593A9009B20C8 /* MainViewController.swift */,
 				CAC4AFA81F9593A9009B20C8 /* Assets.xcassets */,
 				CAC4AFAA1F9593A9009B20C8 /* LaunchScreen.storyboard */,
 				CAC4AFAD1F9593A9009B20C8 /* Info.plist */,
@@ -118,12 +115,12 @@
 				CAC4AF9A1F9593A9009B20C8 /* Sources */,
 				CAC4AF9B1F9593A9009B20C8 /* Frameworks */,
 				CAC4AF9C1F9593A9009B20C8 /* Resources */,
-				CAC4AFBD1F959444009B20C8 /* Embed Frameworks */,
+				CAEBC3681F95A0F0003D4B3A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CAC4AFBC1F959444009B20C8 /* PBXTargetDependency */,
+				CAEBC3671F95A0F0003D4B3A /* PBXTargetDependency */,
 			);
 			name = BetterButtonDemo;
 			productName = BetterButtonDemo;
@@ -187,7 +184,6 @@
 			files = (
 				CAC4AFAC1F9593A9009B20C8 /* LaunchScreen.storyboard in Resources */,
 				CAC4AFA91F9593A9009B20C8 /* Assets.xcassets in Resources */,
-				CAC4AFA71F9593A9009B20C8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAC4AFA41F9593A9009B20C8 /* ViewController.swift in Sources */,
+				CAC4AFA41F9593A9009B20C8 /* MainViewController.swift in Sources */,
 				CAC4AFA21F9593A9009B20C8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,22 +202,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CAC4AFBC1F959444009B20C8 /* PBXTargetDependency */ = {
+		CAEBC3671F95A0F0003D4B3A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BetterButton;
-			targetProxy = CAC4AFBB1F959444009B20C8 /* PBXContainerItemProxy */;
+			targetProxy = CAEBC3661F95A0F0003D4B3A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CAC4AFA51F9593A9009B20C8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CAC4AFA61F9593A9009B20C8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CAC4AFAA1F9593A9009B20C8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -343,6 +331,7 @@
 		CAC4AFB11F9593A9009B20C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G3KGQDJHJS;
@@ -358,6 +347,7 @@
 		CAC4AFB21F9593A9009B20C8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G3KGQDJHJS;
