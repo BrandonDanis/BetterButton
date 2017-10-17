@@ -14,3 +14,16 @@ My goals with this are to:
 
 ### What it currently looks like
 ![Alt Text](https://imgur.com/PqJVJfT.gif)
+
+### How to use
+Use it exactly like a normal UIButton, except it has some additional functionality such as shacking and pre-defined color themes. (more to come!)
+
+```swift
+let mainButton : BetterButton = {
+    let btn = BetterButton(frame: CGRect(x: 50.0, y: 50.0, width: 200.0, height: 40.0))
+    btn.theme = .Green
+    btn.setTitle("Enter", for: .normal)
+    btn.translatesAutoresizingMaskIntoConstraints = false
+    return btn
+}()
+```
