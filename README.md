@@ -1,5 +1,5 @@
 # BetterButton
-iOS UIButton framework that facilitates adding beautiful to your projects!  🔴
+iOS UIButton framework that facilitates adding beautiful buttons to your projects!  🔴
 
 In my other projects, I always found myself styling buttons in similar fashion. Therefore I decided to create the BetterButton, which inherits from UIButton but has all the styling already done. Which saves me time and looks very good with no extra code no boilerplate code required!
 
