@@ -14,6 +14,7 @@ class MainViewController: UIViewController {
     let mainButton : BetterButton = {
         let btn = BetterButton(frame: CGRect(x: 50.0, y: 50.0, width: 200.0, height: 40.0))
         btn.style = .Rounded
+        btn.color = .Purple
         btn.setTitle("Enter", for: .normal)
         btn.translatesAutoresizingMaskIntoConstraints = false
         return btn

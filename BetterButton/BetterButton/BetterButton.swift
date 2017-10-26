@@ -49,6 +49,7 @@ public class BetterButton: UIButton {
         layer.masksToBounds = false
         
         updateStyle(style)
+        updateColorTheme(color)
     }
     
     public override init(frame: CGRect) {
@@ -115,14 +116,12 @@ public class BetterButton: UIButton {
     
     public func rippleButton(_ duration: Double = 0.25) {
         let rippleRectangle = UIView(frame: self.bounds)
-        rippleRectangle.layer.borderColor = UIColor(red:0.22, green:0.79, blue:0.45, alpha:1.00).cgColor
+        rippleRectangle.layer.borderColor = self.backgroundColor?.cgColor
         rippleRectangle.layer.borderWidth = 2
         rippleRectangle.layer.backgroundColor = UIColor.clear.cgColor
         rippleRectangle.layer.cornerRadius = self.layer.cornerRadius
         self.addSubview(rippleRectangle)
         self.sendSubview(toBack: rippleRectangle)
-        
-        
         
         UIView.animate(withDuration: 0.25, animations: {
             rippleRectangle.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
