@@ -17,6 +17,7 @@ My goals with this are to:
 
 ### What it currently looks like
 ![Alt Text](https://imgur.com/PqJVJfT.gif)
+![Pulse Button](https://imgur.com/mUEzveR.gif)
 
 ### How to use
 Use it exactly like a normal UIButton, except it has some additional functionality such as shacking and pre-defined color themes. (more to come!)
