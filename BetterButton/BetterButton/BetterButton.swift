@@ -57,6 +57,19 @@ public class BetterButton: UIButton {
         Setup()
     }
     
+    public init(frame: CGRect, style: BeautifulButtonStyle) {
+        super.init(frame: frame)
+        self.style = style
+        Setup()
+    }
+    
+    public init(frame: CGRect, style: BeautifulButtonStyle, color: BeautifulButtonColorStyle) {
+        super.init(frame: frame)
+        self.style = style
+        self.color = color
+        Setup()
+    }
+    
     required public init(coder: NSCoder) {
         super.init(coder: coder)!
     }
