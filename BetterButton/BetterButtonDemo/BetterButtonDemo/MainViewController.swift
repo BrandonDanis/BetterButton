@@ -13,7 +13,7 @@ class MainViewController: UIViewController {
 
     let mainButton : BetterButton = {
         let btn = BetterButton(frame: CGRect(x: 50.0, y: 50.0, width: 200.0, height: 40.0))
-        btn.theme = .Green
+        btn.style = .Rounded
         btn.setTitle("Enter", for: .normal)
         btn.translatesAutoresizingMaskIntoConstraints = false
         return btn
@@ -21,7 +21,7 @@ class MainViewController: UIViewController {
     
     let shakeButton : BetterButton = {
         let btn = BetterButton(frame: CGRect(x: 0, y: 0, width: 200.0, height: 40.0))
-        btn.theme = .Red
+        btn.style = .Square
         btn.setTitle("Shake", for: .normal)
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.addTarget(self, action: #selector(MainViewController.ShakeMainButton), for: .touchUpInside)
@@ -30,7 +30,7 @@ class MainViewController: UIViewController {
     
     let pulseButton : BetterButton = {
         let btn = BetterButton(frame: CGRect(x: 0, y: 0, width: 200.0, height: 40.0))
-        btn.theme = .Red
+        btn.style = .Square
         btn.setTitle("Grow", for: .normal)
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.addTarget(self, action: #selector(MainViewController.PulseMainButton), for: .touchUpInside)
